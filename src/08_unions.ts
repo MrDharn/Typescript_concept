@@ -26,7 +26,7 @@ function describeUser(u: Admin | Customer){
 function describeUserWithInOperator(u: Admin | Customer){
     if("permissions" in u){
         console.log(u.role)
-    }else{
+    }else{ 
         console.log(u.loyaltyPoints)
     }
 }
