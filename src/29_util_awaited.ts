@@ -12,7 +12,7 @@
     return {
         id: 1,
         name: "Daniel"
-    } as const
+    }
  }
 
  type User111 = Awaited<ReturnType<typeof fetchUser>>
@@ -26,3 +26,7 @@ async function getData(){
 
 type DataReturn = Awaited<ReturnType<typeof getData>>
  
+const newData: DataReturn = [1, "x"]
+
+const user111: User111 = {id:1, name: "Daniel"}
+const user112: User111 = {id:10, name: "Bull"}

@@ -13,3 +13,6 @@ async function getData() {
         Promise.resolve("x")
     ]);
 }
+const newData = [1, "x"];
+const user111 = { id: 1, name: "Daniel" };
+const user112 = { id: 10, name: "Bull" };
