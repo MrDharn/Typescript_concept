@@ -24,3 +24,26 @@ const usersN6: UserN6[] = [
 
 console.log(userN6Extract(usersN6, "id"))
 
+interface Movie {
+  title: string;
+  rating: number;
+}
+
+const movies: Movie[] = [
+  { title: "Inception", rating: 9 },
+  { title: "Interstellar", rating: 8 },
+  { title: "Dunkirk", rating: 7 }
+];
+
+
+function averageRating(movies: Movie[]):number{
+// let average;
+let sum = 0
+for (const movie of movies){
+   sum += movie.rating;
+}
+
+return sum/arr.length
+}
+
+averageRating(movies)
